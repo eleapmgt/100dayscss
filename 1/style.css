@@ -62,9 +62,41 @@ edit the line if you wanna use other fonts */
 .oneone {
   position: absolute;
   z-index: 1;
+  top: 0;
+  left: -16;
   background: white;
   height: 40px;
   width: 20px;
   border-radius: 3px;
   transform: rotate(50deg);
+}
+
+.onetwo {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: white;
+  height: 100px;
+  width: 24px;
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+}
+
+.zeroone, .zerotwo {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 17px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 24px solid #FFFFFF;
+  box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+}
+
+.zerotwo {
+  z-index: 6;
+  left: 100px;
 }
