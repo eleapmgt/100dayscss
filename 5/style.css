@@ -75,3 +75,85 @@
   text-align: right;
   padding: 10px 0 14px 0;
 }
+
+.card .parameters span {
+  position: relative;
+  font-size: 9px;
+  color: #606060;
+  line-height: 13px;
+  padding: 0 10px 0 25px;
+}
+
+.card .parameters span::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 6px;
+  top: 6px;
+  width: 11px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.red::before {
+  background-color: #FA7373;
+}
+
+.blue::before {
+  background-color: #7BA2FF;
+}
+
+.statistic {
+  position: relative;
+  width: 260px;
+  height: 81px;
+  margin: 0 auto;
+}
+
+.line-1, .line-2, .line-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #F2F2F2;
+  height: 1px;
+}
+
+.line-2 {
+  top: 40px;
+}
+
+.line-3 {
+  top: inherit;
+  bottom: 0;
+}
+
+.card .statistic .data svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card .statistic .data.red polyline {
+  stroke: #FA7373;
+}
+.card .statistic .data.blue polyline {
+  stroke: #7BA2FF;
+}
+
+.card .statistic .data polyline {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.card .statistic .data [class*="point-"] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 10;
+}
