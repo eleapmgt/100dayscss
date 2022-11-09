@@ -157,3 +157,85 @@
   cursor: pointer;
   z-index: 10;
 }
+
+.data.red [class*="point-"] {
+  background: #FA7373;
+}
+
+.data.red .point-1 {
+  left: 7px;
+  top: 43px;
+}
+
+.data.red .point-2 {
+  left: 48px;
+  top: 9px;
+}
+
+.data.red .point-3 {
+  left: 88px;
+  top: 20px;
+}
+
+.data.red .point-4 {
+  left: 128px;
+  top: 8px;
+}
+
+.data.red .point-5 {
+  left: 169px;
+  top: 35px;
+}
+
+.data.red .point-6 {
+  left: 209px;
+  top: 45px;
+}
+
+.data.red .point-7 {
+  left: 249px;
+  top: 16px;
+}
+
+.data.blue [class*="point-"] {
+  background: #7BA2FF;
+}
+
+.data.blue .point-1 {
+  left: 7px;
+  top: 58px;
+}
+
+.data.blue .point-2 {
+  left: 48px;
+  top: 47px;
+}
+
+.data.blue .point-3 {
+  left: 88px;
+  top: 62px;
+}
+
+.data.blue .point-4 {
+  left: 128px;
+  top: 52px;
+}
+
+.data.blue .point-5 {
+  left: 169px;
+  top: 58px;
+}
+
+.data.blue .point-6 {
+  left: 209px;
+  top: 71px;
+}
+
+.data.blue .point-7 {
+  left: 249px;
+  top: 61px;
+}
+
+.data .tooltip {
+
+}
