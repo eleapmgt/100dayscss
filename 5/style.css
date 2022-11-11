@@ -158,7 +158,41 @@
   z-index: 10;
 }
 
-.data.red [class*="point-"] {
+.data .tooltip {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translate3d(-50%, 10px, 0);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: white;
+  padding: 8px 6px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+}
+
+.data .tooltip::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  left: 50%;
+  margin-left: -3px;
+  bottom: -3px;
+  transform: rotate(45deg);
+}
+
+.data [class^=point-]:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.data.red [class*="point-"], .data.red .tooltip, .data.red .tooltip::after {
   background: #FA7373;
 }
 
@@ -197,7 +231,7 @@
   top: 16px;
 }
 
-.data.blue [class*="point-"] {
+.data.blue [class*="point-"], .data.blue .tooltip, .data.blue .tooltip::after {
   background: #7BA2FF;
 }
 
@@ -234,8 +268,4 @@
 .data.blue .point-7 {
   left: 249px;
   top: 61px;
-}
-
-.data .tooltip {
-
 }
