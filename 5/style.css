@@ -269,3 +269,19 @@
   left: 249px;
   top: 61px;
 }
+
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.day {
+  font-size: 9px;
+  color: #949494;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-align: center;
+}
